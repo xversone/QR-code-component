@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
-*,
-*::after,
-*::before {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .no-wrap {
@@ -21,54 +19,70 @@ img {
 :root {
   --FF: "Outfit", sans-serif;
 
-  --white: hsl(0, 0%, 100%);
-  --light-gray: hsl(212, 45%, 89%);
-  --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --light-gray: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
-  font-family: var(--FF);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
   background: var(--light-gray);
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: var(--FF);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: auto;
 }
 
 .card {
   background: var(--white);
-  margin: auto;
-  padding: 1.2rem;
-  max-width: 375px;
-  box-shadow: 0px 4px 7px var(--light-gray);
   border-radius: 1.5em;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  max-width: 375px;
+  padding: 1.2rem;
   text-align: center;
 }
 
-.qr-code {
+.card__qr-code {
   border-radius: 1em;
 }
 
-.card-body {
+.card__body {
   margin: 0.8rem;
 }
 
-.card-title {
-  font-weight: bold;
-  font-size: 1.6rem;
-  margin: 1.1rem 0;
+.card__title {
   color: var(--dark-blue);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1.1rem 0;
 }
 
-.card-paragraph {
-  margin: 0 1.5rem;
-  font-size: 15px;
+.card__paragraph {
   color: var(--grayish-blue);
+  font-size: 15px;
+  margin: 0 1.5rem;
+}
+
+footer {
+  margin-bottom: 1rem;
 }
 
 .attribution {
   text-align: center;
-  margin-bottom: 1rem;
+}
+
+.attribution a {
+  color: var(--dark-blue);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  filter: opacity(0.8);
 }

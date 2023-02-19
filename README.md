@@ -9,8 +9,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Overview](#overview)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
+  - [Built with](#built-with)
 
 ## Overview
 
@@ -20,12 +19,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/xversone/QR-code-component)
-- Live Site URL: [Add live site URL here](https://xversone.github.io/QR-code-component/)
+- Solution URL: [https://github.com/xversone/QR-code-component](https://github.com/xversone/QR-code-component)
+- Live Site URL: [https://xversone.github.io/QR-code-component/](https://xversone.github.io/QR-code-component/)
 
-## My process
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
